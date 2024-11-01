@@ -69,10 +69,7 @@ jobs:
           uses: actions/setup-python@v5
           with:
             python-version: ${{ matrix.python-version }}
-
-        - name: Install Pandoc
-          run: sudo apt-get install pandoc
-
+            
         - name: Install RTD requirements
           run: pip install -r doc/rtd_requirements.txt
 
